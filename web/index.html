@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro como proveedor · Periferia IT Group</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="rail">
+        <div class="brand">Periferia<span>IT Group</span></div>
+        <p class="rail-note">Agente de registro como proveedor. Prepara formulario y soportes; la firma y el envío son humanos.</p>
+        <div class="rail-meta" id="health">Consultando proveedor…</div>
+      </aside>
+      <main class="chat">
+        <header class="chat-head">
+          <h1>Registro como proveedor</h1>
+          <p>Escribe por ejemplo: <em>Procesa el caso "ec-corp-andina".</em></p>
+        </header>
+        <div class="history" id="history" aria-live="polite"></div>
+        <form class="composer" id="composer">
+          <input id="input" autocomplete="off" placeholder="Escribe tu mensaje…" aria-label="Mensaje" />
+          <button type="submit" id="send">Enviar</button>
+        </form>
+        <p class="thinking" id="thinking" hidden>Pensando…</p>
+      </main>
+      <aside class="summary" id="summary">
+        <h2>Estado</h2>
+        <p class="summary-empty">Sin actividad todavía.</p>
+      </aside>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
